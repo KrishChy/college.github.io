@@ -1,0 +1,429 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@media (prefers-reduced-motion: no-preference) {
+    * {
+        scroll-behavior: smooth;
+    }
+}
+
+:root {
+    --bg-color: rgba(212, 210, 210, 0.938);
+    --white-color: #fff;
+    --orange-color: orange;
+    --title-color: rgb(63, 58, 58);
+    --black-color: black;
+    --nav-color: #163269;
+    --service-color: rgba(228, 227, 227, 0.962);
+    --future-color: #d4e1fa;
+    --future-bg-color: rgb(30, 40, 60);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Roboto", 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+}
+
+/* nav section */
+.top {
+    width: 100%;
+    background: var(--nav-color);
+    padding: 1.5rem;
+    display: flex;
+    justify-content: end;
+    align-items: left;
+    gap: 5px;
+}
+
+.top span a {
+    color: #96a2b8;
+}
+
+.top span a:hover {
+    color: var(--white-color);
+}
+
+
+.top-btn a {
+    color: var(--white-color);
+    padding: 10px 5px;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.btn-profile a {
+    background: rgba(36, 156, 193, 0.953);
+}
+
+.btn-Apply a {
+    background: rgb(226, 159, 35);
+}
+
+/* header */
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.header .logo {
+    background: url(Img/clz-logo-header.png);
+    background-position: center;
+    background-size: 100% 100%;
+    width: 12vh;
+    height: 10vh;
+}
+
+.header span {
+    color: var(--nav-color);
+    font-size: 2rem;
+    font-weight: bolder;
+    flex-grow: 0.7;
+}
+
+.header span a {
+    color: var(--nav-color);
+}
+
+
+
+.header .navlist .navlinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.header .navlist .navlinks a {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--nav-color);
+    line-height: 27px;
+}
+
+.header .navlist .navlinks a:hover {
+    color: var(--orange-color);
+}
+
+#menuBtn {
+    color: var(--nav-color);
+    font-size: 2rem;
+}
+
+/* banner section */
+
+.banner {
+    background: url(Img/clzbanner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 0;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: -1;
+}
+
+.banner .box {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(17, 29, 94, .7);
+    z-index: -5;
+}
+
+.banner span {
+    width: 80%;
+    margin: 0 auto;
+    color: var(--white-color);
+    font-size: 35px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.about {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    padding: 3rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .paragraph {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.about .paragraph span {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--nav-color);
+    text-transform: capitalize;
+}
+
+.about .paragraph span:hover {
+    color: var(--orange-color);
+}
+
+.about .paragraph p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    text-align: justify;
+    padding: 1rem 0 0;
+}
+
+.about img {
+    width: 500px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.about img:hover {
+    transform: scale(0.9);
+}
+
+/* vision Mission Culture */
+.VMC {
+    background: var(--service-color);
+}
+
+.VMC .about {
+    padding: 1rem;
+}
+
+.VMC .about .paragraph p {
+    padding-bottom: 0;
+}
+
+.VMC .about .paragraph ol li {
+    list-style: disc;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    padding: 1rem 0 0;
+}
+
+/* Principal's Message */
+.Principal {
+    background: var(--nav-color);
+}
+
+.Principal .paragraph span{
+    color: var(--orange-color);
+}
+
+.Principal .paragraph span:hover{
+    color: var(--white-color);
+}
+
+.Principal .paragraph p{
+    color: var(--future-color);
+}
+
+
+footer {
+    margin-top: 2px;
+    background-color: var(--future-bg-color);
+}
+
+/* footer clz logo and name from */
+footer #head {
+    padding: 1rem 0 3rem;
+}
+
+footer #head span a {
+    color: var(--white-color);
+}
+
+footer .foot-div {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    padding-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+/* address */
+footer .foot-div .cont {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foot-div .cont h2 {
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 18;
+    font-weight: bolder;
+    border-bottom: 2px solid var(--orange-color);
+    padding-bottom: 9px;
+    margin-bottom: 1rem
+}
+
+footer .foot-div .cont p {
+    color: #ababab;
+    font-size: 17px;
+    font-size: 500;
+    padding: 10px 0;
+}
+
+footer .foot-div .cont p span {
+    color: var(--white-color);
+}
+
+footer .foot-div iframe {
+    width: 300px;
+    border-radius: 15px;
+}
+
+/* quick links */
+footer .foot-div .cont .quicklinks {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .foot-div .cont .quicklinks a {
+    color: #ababab;
+    font-size: 17px;
+    font-weight: 500;
+    gap: 1rem;
+    padding: 1rem 0;
+    line-height: 27px;
+    padding: 0.5rem;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+
+footer .foot-div .cont .quicklinks a:hover {
+    color: var(--orange-color);
+}
+
+footer .CopyRight {
+    padding: 2rem 0;
+    background: #163269;
+    color: #ababab;
+}
+
+footer .CopyRight p {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+/* media Query */
+
+/* min for navbar three line only */
+@media (min-width: 837px) {
+    .navlist {
+        display: flex;
+        /* Keep the navbar links visible on larger screens */
+        position: static;
+        margin-top: 0;
+    }
+
+    #menuBtn {
+        display: none;
+        /* Hide the menu button on large screens */
+    }
+
+}
+
+@media (max-width: 1036px) {
+    .about {
+        margin: 0 auto;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 836px) {
+    .header .navlist {
+        display: none;
+        /* Hide the navbar links by default on mobile */
+    }
+
+    #menuBtn {
+        display: none;
+        /* Initially hidden on large screens */
+        font-size: 2rem;
+        color: var(--nav-color);
+        cursor: pointer;
+        display: block;
+        /* Show the menu button */
+    }
+
+    /* When the menu is visible, show the links below the navbar */
+    .header .navlist .navlinks {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        gap: 1rem;
+        right: 0;
+        top: 9rem;
+        background: var(--white-color);
+        padding: 0;
+    }
+
+    .header .navlist .navlinks a {
+        font-size: 17px;
+        font-weight: 500;
+        color: var(--nav-color);
+        line-height: 27px;
+        padding: 0.5rem;
+        text-align: center;
+        transition: color 0.3s ease;
+    }
+
+    .header .navlist .navlinks a:hover {
+        color: var(--orange-color);
+        /* Optional: color on hover */
+    }
+
+    .about {
+        width: 100%;
+    }
+}
+
+@media (max-width: 648px) {
+    .about img {
+        width: 500px;
+    }
+}
+
+@media (max-width: 496px) {
+    .about img {
+        width: 350px;
+    }
+}
